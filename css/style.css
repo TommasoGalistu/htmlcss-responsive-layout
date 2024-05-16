@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    /* debug */
+    background-color: blue;
+    height: 3rem;
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    /* debug */
+    background-color: red;
+    height: 100%;
+}
+.flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    position: relative;
+    /* debug */
+    background-color: yellow;
+}
+
+li{
+    list-style-type:none
+}
+
+.menu li{
+    position: absolute;
+    display: none;
+}
+
+section{
+    height: 10rem;
+}
+
+
+@media screen and (min-width: 400px){
+
+}
+@media screen and (min-width: 800px){
+    .close{
+        display: none;
+    }
+    .menu li{
+        display: inline-block;
+        position: relative;
+    } 
+}
+
+
+
+
+
+
+/* debug */
+main{
+     height: 100rem;
+}
