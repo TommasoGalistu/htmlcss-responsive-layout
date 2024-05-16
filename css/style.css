@@ -288,7 +288,10 @@ footer .nuovaColonna{
 
     .firstCol{
         display: flex;
-        align-items: flex-end;
+    }
+
+    .metaColonna.immagine{
+        align-self: flex-end;
     }
     .sectionViola{
         display: flex;
