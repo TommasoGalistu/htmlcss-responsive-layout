@@ -47,9 +47,9 @@ main{
 }
 
 section{
-    padding: 2rem 0;
-    
+    padding: 2rem 0; 
 }
+
 
 .primaSection{
     background-color: yellow;
@@ -70,7 +70,7 @@ section{
     border: 1px solid black;
 }
 
-.sectionViola .container{
+.sectionViola {
     background-color: #9792E4;
     
     /* debug */
@@ -83,6 +83,52 @@ section{
     border: 1px solid black;
 
 }
+
+.terzaSection{
+    /* debug */
+    background-color: yellow;
+    height:40rem;
+    width: 100%;
+}
+.presentazione{
+    /* debug */
+    background-color: blue;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid white;
+}
+
+/* inizio terza section con foto e feedback */
+.contFeedBack{
+    background-color: #9792E4;
+    /* debug */
+    
+    height: 3rem;
+    width: 100%;
+    border: 1px solid black;
+}
+.terzaSection .secondCol{
+    
+    /* debug */
+    background-color: green;
+    height: 100%;
+    border: 1px solid white;
+}
+.terzaSection .firstCol{
+    
+    /* debug */
+    background-color: green;
+    height: 100%;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 600px){
     .row{
@@ -107,11 +153,15 @@ section{
     .sectionViola .container{
         display: flex;
         flex-wrap: wrap;
-        
+        justify-content: center;
         gap: 1rem;
     }
     .elencoAgevolazioni .colInteraMeta{
         width: calc(50% - 0.5rem);
+    }
+    .contFeedBack{
+        display: flex;
+        justify-content: space-between;
     }
     
 }
