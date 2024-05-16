@@ -12,36 +12,41 @@ header{
     
     width: 100%;
 }
+/* container standard per tutta la pagina */
 .container{
     width: 90%;
     margin: auto;
-    
 }
+
 .flexSpaceBetween{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .menu{
     position: relative;
     padding: 1rem 0 ;
 }
-
+/* menu a panino */
 .fa-bars{
     font-size: 2rem;
     color: white;
 }
+
 a{
     padding: 0.5rem 0;
     text-decoration: none;
     color: white;
 }
+
 .button{
     background-color: white;
     padding: 0.5rem 1rem;
     border-radius: 30px;
     color: black;
 }
+
 .button:hover{
     box-shadow: 1px 5px rgba(0, 0, 140, 0.3);
     cursor: pointer;
@@ -53,7 +58,6 @@ a{
 li{
     list-style-type:none;
     padding: 0 10px;
-    
     height: 100%;
 }
 
@@ -62,35 +66,59 @@ li{
     display: none;
 }
 
+
+
+/* inizio main */
 main{
     /* se cambia deve cambiare anche altezza header */
     padding-top: 4.5rem;
     /* se cambia deve cambiare anche altezza header */
 }
 
+/* padding generico a tutte le section */
 section{
     padding: 2rem 0; 
 }
 
 
-.primaSection{
-    background-color: yellow;
-}
-
-.row{
-    
-    /* debug */
-    background-color: blue;
-    border: 1px solid black;
-}
-
+/* misure standard per tutti i col */
 .col{
     margin: 0 0 0.5rem ;
-    /* debug */
-    height: 2rem;
-    background-color: yellowgreen;
-    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #B5DDFF;
+    
 }
+/* inizio prima section */
+.metaColonna{
+    margin-bottom: 2.5rem;
+}
+
+h3{
+    color: #0587FD;
+    padding: 1rem;
+}
+
+p{
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+.firstSection .button{
+    margin: 1rem;
+    background-color: #0084FD;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    
+}
+
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 
 /* seconda section quarta e sesta..raggruppamento sezioni viola */
 .sectionViola {
