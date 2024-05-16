@@ -70,11 +70,19 @@ section{
     border: 1px solid black;
 }
 
-.secondaSection{
+.sectionViola .container{
     background-color: #9792E4;
+    
     /* debug */
 }
 
+.colInteraMeta{
+    width: 100%;
+    /* debug */
+    height: 5rem;
+    border: 1px solid black;
+
+}
 
 @media screen and (min-width: 600px){
     .row{
@@ -96,6 +104,16 @@ section{
     .secondRowCol{
         width: calc((100% / 3) - 0.6rem);
     }
+    .sectionViola .container{
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 1rem;
+    }
+    .elencoAgevolazioni .colInteraMeta{
+        width: calc(50% - 0.5rem);
+    }
+    
 }
 
 
@@ -110,6 +128,15 @@ section{
         display: inline-block;
         position: relative;
     } 
+    .sectionViola{
+        display: flex;
+    }
+    .meta .colInteraMeta{
+        width: calc(50% - 0.5rem);
+    }
+    .elencoAgevolazioni .colInteraMeta{
+        width: calc(100% / 3 - 0.7rem);
+    }
 }
 
 
