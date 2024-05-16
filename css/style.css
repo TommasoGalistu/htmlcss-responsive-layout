@@ -7,18 +7,15 @@
 
 header{
     position: fixed;
+    background-color: #0084FD;
     /* debug */
-    background-color: blue;
-    height: 3rem;
-    /* se cambia altezza cambia anche main */
+    
     width: 100%;
 }
 .container{
     width: 90%;
     margin: auto;
-    /* debug */
-    background-color: red;
-    height: 100%;
+    
 }
 .flexSpaceBetween{
     display: flex;
@@ -27,12 +24,37 @@ header{
 }
 .menu{
     position: relative;
-    /* debug */
-    background-color: yellow;
+    padding: 1rem 0 ;
+}
+
+.fa-bars{
+    font-size: 2rem;
+    color: white;
+}
+a{
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: white;
+}
+.button{
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    color: black;
+}
+.button:hover{
+    box-shadow: 1px 5px rgba(0, 0, 140, 0.3);
+    cursor: pointer;
+}
+.button:active{
+    box-shadow: -1px -5px rgba(0, 0, 140, 0.3);
 }
 
 li{
-    list-style-type:none
+    list-style-type:none;
+    padding: 0 10px;
+    
+    height: 100%;
 }
 
 .menu li{
@@ -42,7 +64,7 @@ li{
 
 main{
     /* se cambia deve cambiare anche altezza header */
-    padding-top: 3rem;
+    padding-top: 4.5rem;
     /* se cambia deve cambiare anche altezza header */
 }
 
