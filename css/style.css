@@ -42,7 +42,7 @@ li{
 
 main{
     /* se cambia deve cambiare anche altezza header */
-    padding: 3rem 0;
+    padding-top: 3rem;
     /* se cambia deve cambiare anche altezza header */
 }
 
@@ -98,7 +98,9 @@ section{
     width: 100%;
     border: 1px solid white;
 }
-
+.dimensioneColGenerale .colInteraMeta{
+    text-align: center;
+}
 
 /* inizio terza section con foto e feedback */
 .contFeedBack{
@@ -141,8 +143,16 @@ section{
     border: 1px solid black;
 }
 
+/* inizio footer */
 
+footer{
+    background-color: black;
+}
 
+footer .nuovaColonna{
+    /* debug */
+    border: 1px solid black;
+}
 
 
 @media screen and (min-width: 600px){
@@ -171,7 +181,7 @@ section{
         justify-content: center;
         gap: 1rem;
     }
-    .elencoAgevolazioni .colInteraMeta{
+    .dimensioneColGenerale .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
     .contFeedBack{
@@ -189,7 +199,9 @@ section{
     .contenutiQuartaSezione.piccolo{
         width: 30%;
     }
-    
+    footer .colInteraMeta{
+        margin: auto;
+    }
     
 }
 
@@ -211,7 +223,7 @@ section{
     .meta .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
-    .elencoAgevolazioni .colInteraMeta{
+    .dimensioneColGenerale .colInteraMeta{
         width: calc(100% / 3 - 0.7rem);
     }
 }
