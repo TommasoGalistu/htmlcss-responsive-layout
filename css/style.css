@@ -87,12 +87,13 @@ section{
     margin: 0 0 0.5rem ;
     border-radius: 25px;
     background-color: #B5DDFF;
-    padding: 3.5rem 3.5rem 0;
+    padding: 1.5rem 1.5rem 0;
     
 }
 /* inizio prima section */
 .margineDistanza{
     margin-bottom: 2.5rem;
+    width: 100%;
 }
 
 h3{
@@ -115,10 +116,10 @@ p{
 
 .metaColonna.immagine{
     width: 100%;
-    
 }
 .metaColonna img{
     width: 70%;
+    margin: auto;
 }
 .secondCol, .secondRowCol{
     text-align: center;
@@ -218,7 +219,7 @@ footer .nuovaColonna{
 @media screen and (min-width: 768px ){
     .row{
         display: flex;
-        align-items: center;
+        align-items: stretch;
         justify-content: space-between;
         
     }
@@ -227,6 +228,7 @@ footer .nuovaColonna{
     }
     .firstCol{
         width: calc((100% / 3) *2 - 0.3rem);
+        
     }
     
     .secondCol{
@@ -267,6 +269,7 @@ footer .nuovaColonna{
 
 
 @media screen and (min-width: 1200px ){
+    
     .container{
         width: 60%;
     }
@@ -277,6 +280,11 @@ footer .nuovaColonna{
         display: inline-block;
         position: relative;
     } 
+
+    .firstCol{
+        display: flex;
+        align-items: flex-end;
+    }
     .sectionViola{
         display: flex;
     }
