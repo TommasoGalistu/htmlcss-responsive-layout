@@ -117,8 +117,9 @@ p{
 .metaColonna.immagine{
     width: 100%;
 }
-.metaColonna img{
-    width: 70%;
+
+main img{
+    max-width: 100%;
     margin: auto;
 }
 .secondCol, .secondRowCol{
@@ -140,23 +141,38 @@ main i{
 .sectionViola {
     background-color: #9792E4;
     
-    /* debug */
 }
 
 .colInteraMeta{
     width: 100%;
-    /* debug */
-    height: 5rem;
-    border: 1px solid black;
-
+    border-radius: 30px;
+    
 }
 
-.terzaSection{
-    /* debug */
-    background-color: yellow;
-    height:40rem;
-    width: 100%;
+.sectionViola h3{
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    
 }
+
+.whiteColor{
+    color: white;
+}
+
+.backWhite{
+    background-color: white;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
 .presentazione{
     /* debug */
     background-color: blue;
@@ -245,9 +261,13 @@ footer .nuovaColonna{
     .sectionViola .container{
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-end;
         justify-content: center;
         gap: 1rem;
     }
+
+    
+
     .dimensioneColGenerale .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
@@ -293,9 +313,9 @@ footer .nuovaColonna{
     .metaColonna.immagine{
         align-self: flex-end;
     }
-    .sectionViola{
+    /* .sectionViola{
         display: flex;
-    }
+    } */
     .meta .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
