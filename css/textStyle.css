@@ -3,6 +3,9 @@ h3{
     color: var(--colorStylePage);
     margin-bottom: var(--distanceTextSection);
 }
+.sectionViola.meta h3{
+    font-size: 2rem;
+}
 /* h3 indice delle card */
 .numberText, .quintasezione h3{
     font-size: 3rem;
@@ -19,10 +22,8 @@ p{
 .quintasezione p{
     line-height: 38px;
 }
-h3{
-    /* titoli prima section */
-    
-}
+
+
 .containerFinePagina h3{
     color: var(--colorWhite);
 }
@@ -41,7 +42,9 @@ h4{
 }
 
 .quintasezione .button{
-    background-color: var(--backgroundColorStyleSection)
+    background-color: var(--backgroundColorStyleSection);
+    padding: 0.5rem;
+    font-size: 0.9rem;
     
 }
 .quintasezione .fa-linkedin{

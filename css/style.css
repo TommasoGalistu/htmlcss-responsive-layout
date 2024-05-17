@@ -187,12 +187,13 @@ main i{
     height: 200px; 
     border-radius: 50%;
     overflow: hidden;
-    
+    margin: auto;
 }
 
 .secondCol img{
     height: 100%;
     object-fit: cover;
+    
     
 }
 
@@ -237,15 +238,25 @@ main i{
     position: relative;
     
 }
+
+.virgolette{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
 .virgolette i{
+    
     font-size: 4rem;
     position: absolute;
-    left: 150px;
+    left: 144px;
     top: -30px;
     color: var(--backgroundColorStyleSection);
 }
 
+.contenutiQuartaSezione .immagineCerchio{
+    margin: 0 auto;
 
+}
 /* sesta section */
 .containerFinePagina{
     width: 90%;
@@ -313,8 +324,15 @@ footer{
         justify-content: center;
         gap: 1rem;
     }
-
+    .sectionViola.meta h3{
+        font-size: 4rem;
+    }
     
+    .secondCol.immagineCerchio{
+        
+        margin-right: 2rem;
+        margin-left: 0;
+    }
 /* terza section */
     .quartaSection .colInteraMeta{
         width: calc(50% - 0.5rem);
