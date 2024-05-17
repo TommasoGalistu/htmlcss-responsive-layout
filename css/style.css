@@ -6,7 +6,7 @@
 }
 
 header{
-    /* position: fixed; */
+    position: fixed;
     background-color: var(--backGroundStylePage);
     z-index: 100;
     width: 100%;
@@ -144,11 +144,13 @@ main i{
     background-color: var(--backgroundColorStyleSection);
 }
 
+
 .colInteraMeta{
     width: 100%;
     border-radius: var(--borderRadiusRound);
     
 }
+
 
 .whiteColor{
     color: var(--colorWhite);
@@ -200,7 +202,6 @@ main i{
     padding: 2rem;
     border-radius: 30px;
     margin-bottom: 2rem;
-    text-align: center;
     
 }
 .terzaSection .secondCol{
@@ -234,13 +235,14 @@ main i{
 
 .quintasezione .virgolette{
     position: relative;
+    
 }
 .virgolette i{
     font-size: 4rem;
     position: absolute;
     left: 150px;
     top: -30px;
-
+    color: var(--backgroundColorStyleSection);
 }
 
 
@@ -254,10 +256,12 @@ main i{
 .containerFinePagina .button{
     background-color: var(--colorButtonWhite);
     color: var(--colorBlackButton);
+    padding: 1rem 5rem;
+    color: var(--backgroundColorStyleSection);
 }
 
 .containerButton{
-    margin-bottom: var(--distanceTextSection);
+    margin-bottom: 3rem;
 }
 
 .containerFinePagina .span{
@@ -298,6 +302,7 @@ footer{
     .secondCol{
         width: calc((100% / 3) - 0.6rem);
     }
+
     .secondRowCol{
         width: calc((100% / 3) - 0.6rem);
     }
@@ -317,12 +322,12 @@ footer{
     
     .contFeedBack{
         display: flex;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         align-items: center;
     }
 
     .textCol{
-        width: 80%;
+        width: 70%;
     }
     
 
@@ -379,7 +384,10 @@ footer{
     .firstCol{
         display: flex;
     }
-
+    .colInteraMeta .backWhite{
+        padding: 0;
+        margin: 0;
+    }
     .metaColonna.immagine{
         align-self: flex-end;
     }

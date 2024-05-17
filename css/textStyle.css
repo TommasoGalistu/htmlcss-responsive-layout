@@ -3,16 +3,24 @@ h3{
     color: var(--colorStylePage);
     margin-bottom: var(--distanceTextSection);
 }
+/* h3 indice delle card */
+.numberText, .quintasezione h3{
+    font-size: 3rem;
+}
 .quartaSection h3, .quintasezione h3{
     color: var(--backgroundColorStyleSection);
 }
 
 p{
     margin: var(--distanceTextSection) 0;
+    
+}
+
+.quintasezione p{
     line-height: 38px;
 }
 h3{
-    font-size: var(--fontSizeTitle2_5);
+    /* titoli prima section */
     
 }
 .containerFinePagina h3{
@@ -28,6 +36,17 @@ h4{
     padding-bottom: 1.5rem;
 }
 
+.quintasezione h4{
+    color: var(--backgroundColorStyleSection);
+}
+
+.quintasezione .button{
+    background-color: var(--backgroundColorStyleSection)
+    
+}
+.quintasezione .fa-linkedin{
+    color: white;
+}
 h2{
     padding: var(--distanceTextSection);
     text-align: center;
@@ -71,3 +90,8 @@ strong{
 /* span.distance{
     padding-bottom: var(--distanceTextSection) !important;
 } */
+
+footer a{
+    color: var(--backgroundColorStyleSection);
+    text-decoration: underline;
+}
