@@ -1,5 +1,25 @@
 :root{
+    /* larghezze container */
     --larghezzaContainer: 90%;
-    --larghContFinale: 40%;
-    --marginAuto: auto;
+    --larghContFinale: 90%;
+
+    /* style colori della pagina */
+    --backGroundStylePage: #0084FD;
+    --colorStylePage: #0084FD;
+    --backgroundColorStyleSection: #9792E4;
+    --colorWhite: white;
+    --backGroundColorButtonWhite: white;
+    --colorBlackButton: black;
+    --colorButtonWhite: white;
+
+    /* distanze nei contenitori e stile */
+    --distanceSectionPadding: 2rem 0;
+    --borderRadiusRound: 30px;
+    --paddinContainer: 1.5rem;
+    --marginDividedInternSection: 2.5rem;
+    --distanceTextSection: 1.5rem;
+
+    /* font size */
+    --fontSizeTitle2_5: 2.5rem
+
 }    

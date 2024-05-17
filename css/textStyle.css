@@ -1,0 +1,73 @@
+
+h3{
+    color: var(--colorStylePage);
+    margin-bottom: var(--distanceTextSection);
+}
+.quartaSection h3, .quintasezione h3{
+    color: var(--backgroundColorStyleSection);
+}
+
+p{
+    margin: var(--distanceTextSection) 0;
+    line-height: 38px;
+}
+h3{
+    font-size: var(--fontSizeTitle2_5);
+    
+}
+.containerFinePagina h3{
+    color: var(--colorWhite);
+}
+
+.containerFinePagina{
+    color: var(--colorWhite);
+}
+
+h4{
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+h2{
+    padding: var(--distanceTextSection);
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.containerFinePagina h2{
+    color: orange;
+}
+
+.terzaSection h2{
+   
+    color: var(--backgroundColorStyleSection);
+
+}
+
+.quartaSection h2{
+    color: var(--colorWhite);
+}
+
+.quartaSection .colInteraMeta{
+    background-color: var(--colorWhite);
+    margin-bottom: var(--marginDividedInternSection);
+}
+strong{
+    padding-bottom: var(--distanceTextSection);
+}
+
+.terzaSection .fa-quote-right{
+    margin: 0;
+    color: var(--colorWhite);
+}
+.terzaSection .fa-quote-left{
+    margin: 0;
+    color: var(--colorWhite);
+}
+
+.textCol{
+    color: var(--colorWhite);
+}
+/* span.distance{
+    padding-bottom: var(--distanceTextSection) !important;
+} */

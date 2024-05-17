@@ -6,17 +6,16 @@
 }
 
 header{
-    position: fixed;
-    background-color: #0084FD;
+    /* position: fixed; */
+    background-color: var(--backGroundStylePage);
     z-index: 100;
-    /* debug */
-    
     width: 100%;
 }
+
 /* container standard per tutta la pagina */
 .container{
     width: var(--larghezzaContainer);
-    margin: var(--marginAuto);
+    margin: auto;
 }
 
 .flexSpaceBetween{
@@ -33,20 +32,23 @@ header{
 /* menu a panino */
 .fa-bars{
     font-size: 2rem;
-    color: white;
+    color: var(--colorWhite);
 }
 
 a{
     padding: 0.5rem 0;
     text-decoration: none;
-    color: white;
+    color: var(--colorWhite);
+}
+.button.white{
+    background-color: var(--backGroundColorButtonWhite);
+    color: var(--colorBlackButton);
 }
 
 .button{
-    background-color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border-radius: 30px;
-    color: black;
+    
 }
 
 .button:hover{
@@ -73,55 +75,51 @@ li{
 /* inizio main */
 main{
     /* se cambia deve cambiare anche altezza header */
-    padding-top: 5.5rem;
+    padding-top: 6rem;
     /* se cambia deve cambiare anche altezza header */
 }
 
 /* padding generico a tutte le section */
 section{
-    padding: 2rem 0; 
+    padding: var(--distanceSectionPadding); 
 }
 
 
 /* misure standard per tutti i col */
 .col{
     margin: 0 0 2rem ;
-    border-radius: 25px;
+    border-radius: var(--borderRadiusRound);
     background-color: #B5DDFF;
-    padding: 0 1.5rem 0;
+    padding: var(--paddinContainer);
     
+}
+
+.firstSection .col.firstCol{
+    padding-bottom: 0;
 }
 /* inizio prima section */
 .margineDistanza{
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--marginDividedInternSection);
     width: 100%;
 }
 
-h3{
-    color: #0587FD;
-}
 
-p{
-    padding-bottom: 2rem;
-}
 
 
 .firstSection .button{
     
-    background-color: #0084FD;
-    color: white;
-    padding: 0.5rem 2.5rem;
+    background-color: var(--backGroundStylePage);
+    color: var(--colorButtonWhite);
     
 }
 
 .metaColonna.immagine{
     width: 100%;
-    display: block;
 }
 
 main img{
     max-width: 100%;
-    margin: var(--marginAuto);
+    margin: auto;
 }
 .secondCol, .secondRowCol{
     text-align: center;
@@ -131,44 +129,34 @@ main img{
 .col .fa-solid{
     font-size: 6rem;
     
+    
 }
 
 main i{
     margin-top: 1.5rem;
     color: #0084FD;
+    margin-bottom: var(--distanceTextSection);
 }
 
 /* seconda section quarta e sesta..raggruppamento sezioni viola */
 /* colore standardizzato per 2, 4, 6 section */
 .sectionViola {
-    background-color: #9792E4;
+    background-color: var(--backgroundColorStyleSection);
 }
 
 .colInteraMeta{
     width: 100%;
-    border-radius: 30px;
-    background-color: white;
-    
-}
-
-.sectionViola h3{
-    font-size: 2.5rem;
+    border-radius: var(--borderRadiusRound);
     
 }
 
 .whiteColor{
-    color: white;
+    color: var(--colorWhite);
 }
 
 .backWhite{
     background-color: white;
     text-align: center;
-    padding: 0 1.5rem;
-}
-
-h4{
-    font-size: 1.5rem;
-    padding-bottom: 1.5rem;
 }
 
 .colInteraMeta i{
@@ -185,17 +173,18 @@ h4{
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    margin-right: 2rem;
 }
+
 .terzaSection .secondCol{
 
 }
+
+
 .secondCol.immagineCerchio{
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
     overflow: hidden;
-    
     
 }
 
@@ -225,6 +214,7 @@ h4{
     height: 100%;
     border: 1px solid white;
 }
+
 
 /* quarta section */
 .colInteraMeta{
@@ -256,21 +246,40 @@ h4{
 
 /* sesta section */
 .containerFinePagina{
-    width: var(--larghContFinale);
-    margin: var(--marginAuto);
+    width: 90%;
+    margin: auto;
     text-align: center;
 }
 
+.containerFinePagina .button{
+    background-color: var(--colorButtonWhite);
+    color: var(--colorBlackButton);
+}
+
+.containerButton{
+    margin-bottom: var(--distanceTextSection);
+}
+
+.containerFinePagina .span{
+    padding: 1.5rem;
+}
 /* inizio footer */
 
 footer{
     background-color: black;
 }
 
-footer .nuovaColonna{
+.containePlittle{
+    width: 50%;
+    margin: auto;
+    padding: var(--distanceTextSection);
 }
 
 
+
+
+
+/* inizio media query */
 @media screen and (min-width: 768px ){
     .row{
         display: flex;
@@ -337,13 +346,18 @@ footer .nuovaColonna{
         
     }
     .contenutiQuartaSezione.grande{
-        width: 70%;
+        width: calc(75% - 4rem);
+        margin-right: 4rem;
     }
     .contenutiQuartaSezione.piccolo{
-        width: 30%;
+        width: 25%;
     }
     footer .colInteraMeta{
         margin: var(--marginAuto);
+    }
+    .containerFinePagina{
+        width: 70%;
+        
     }
     
 }
@@ -377,6 +391,10 @@ footer .nuovaColonna{
     }
     .quartaSection .colInteraMeta{
         width: calc(100% / 3 - 0.7rem);
+    }
+    .containerFinePagina{
+        width: 50%;
+        
     }
 }
 
