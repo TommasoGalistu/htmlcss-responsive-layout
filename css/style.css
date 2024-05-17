@@ -15,8 +15,8 @@ header{
 }
 /* container standard per tutta la pagina */
 .container{
-    width: 90%;
-    margin: auto;
+    width: var(--larghezzaContainer);
+    margin: var(--marginAuto);
 }
 
 .flexSpaceBetween{
@@ -121,7 +121,7 @@ p{
 
 main img{
     max-width: 100%;
-    margin: auto;
+    margin: var(--marginAuto);
 }
 .secondCol, .secondRowCol{
     text-align: center;
@@ -253,6 +253,14 @@ h4{
 
 }
 
+
+/* sesta section */
+.containerFinePagina{
+    width: var(--larghContFinale);
+    margin: var(--marginAuto);
+    text-align: center;
+}
+
 /* inizio footer */
 
 footer{
@@ -260,8 +268,6 @@ footer{
 }
 
 footer .nuovaColonna{
-    /* debug */
-    border: 1px solid black;
 }
 
 
@@ -337,7 +343,7 @@ footer .nuovaColonna{
         width: 30%;
     }
     footer .colInteraMeta{
-        margin: auto;
+        margin: var(--marginAuto);
     }
     
 }
