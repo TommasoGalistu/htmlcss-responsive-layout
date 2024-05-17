@@ -99,7 +99,6 @@ section{
 
 h3{
     color: #0587FD;
-    padding: 1.5rem 0;
 }
 
 p{
@@ -148,12 +147,12 @@ main i{
 .colInteraMeta{
     width: 100%;
     border-radius: 30px;
+    background-color: white;
     
 }
 
 .sectionViola h3{
     font-size: 2.5rem;
-    margin-top: 4rem;
     
 }
 
@@ -226,8 +225,13 @@ h4{
 }
 
 /* quarta section */
-.dimensioneColGenerale .colInteraMeta{
-    text-align: center;
+.colInteraMeta{
+    padding: 2rem;
+
+}
+
+.colInteraMeta .button{
+    background-color: #9792E4;
 }
 /* inizio quinta sezione */
 
@@ -289,7 +293,7 @@ footer .nuovaColonna{
 
     
 /* terza section */
-    .dimensioneColGenerale .colInteraMeta{
+    .quartaSection .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
     
@@ -312,6 +316,13 @@ footer .nuovaColonna{
     strong{
         display: block;
     }
+
+    /*  */
+    .quartaSection .tuttoLoSpazio{
+        width: 100%;
+        text-align: center;
+    }
+
     .quintasezione .container{
         display: flex;
         align-items: center;
@@ -356,7 +367,7 @@ footer .nuovaColonna{
     .meta .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
-    .dimensioneColGenerale .colInteraMeta{
+    .quartaSection .colInteraMeta{
         width: calc(100% / 3 - 0.7rem);
     }
 }
