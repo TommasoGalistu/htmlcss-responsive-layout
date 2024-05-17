@@ -8,6 +8,7 @@
 header{
     position: fixed;
     background-color: #0084FD;
+    z-index: 100;
     /* debug */
     
     width: 100%;
@@ -116,6 +117,7 @@ p{
 
 .metaColonna.immagine{
     width: 100%;
+    display: block;
 }
 
 main img{
@@ -170,35 +172,50 @@ h4{
     padding-bottom: 1.5rem;
 }
 
+.colInteraMeta i{
+    background-color: #9792E4;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
 
-
-
+/* inizio terza section */
 .presentazione{
-    /* debug */
-    background-color: blue;
-    height: 3rem;
-    width: 100%;
-    border: 1px solid white;
-}
-.dimensioneColGenerale .colInteraMeta{
     text-align: center;
+    
 }
 
-/* inizio terza section con foto e feedback */
+.terzaSection .secondCol{
+    width: 200px; /* or any other size */
+    height: 200px; /* this should be the same as the width to make it square */
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-right: 2rem;
+    
+}
+
+.terzaSection .secondCol img{
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
 .contFeedBack{
     background-color: #9792E4;
-    /* debug */
+    padding: 2rem;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    text-align: center;
     
-    height: 3rem;
-    width: 100%;
-    border: 1px solid black;
 }
 .terzaSection .secondCol{
     
-    /* debug */
-    background-color: green;
-    height: 100%;
-    border: 1px solid white;
+   
 }
 .terzaSection .firstCol{
     
@@ -208,6 +225,10 @@ h4{
     border: 1px solid white;
 }
 
+/* quarta section */
+.dimensioneColGenerale .colInteraMeta{
+    text-align: center;
+}
 /* inizio quinta sezione */
 
 .quintasezione{
@@ -267,13 +288,29 @@ footer .nuovaColonna{
     }
 
     
-
+/* terza section */
     .dimensioneColGenerale .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
+    
     .contFeedBack{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    .textCol{
+        width: 80%;
+    }
+    
+
+    .terzaSection .secondCol{
+        left: 0;
+        transform: translate(+10%);
+    }
+
+    strong{
+        display: block;
     }
     .quintasezione .container{
         display: flex;
