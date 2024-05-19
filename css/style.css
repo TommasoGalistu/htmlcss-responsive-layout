@@ -70,8 +70,6 @@ li{
     display: none;
 }
 
-
-
 /* inizio main */
 main{
     /* se cambia deve cambiare anche altezza header */
@@ -103,14 +101,10 @@ section{
     width: 100%;
 }
 
-
-
-
 .firstSection .button{
     
     background-color: var(--backGroundStylePage);
     color: var(--colorButtonWhite);
-    
 }
 
 .metaColonna.immagine{
@@ -126,11 +120,8 @@ section{
     text-align: center;
 }
 
-
 .col .fa-solid{
     font-size: 6rem;
-    
-    
 }
 
 main i{
@@ -178,9 +169,6 @@ main i{
     transform: translate(-50%);
 }
 
-.terzaSection .secondCol{
-
-}
 
 
 .secondCol.immagineCerchio{
@@ -194,8 +182,6 @@ main i{
 .secondCol img{
     height: 100%;
     object-fit: cover;
-    
-    
 }
 
 
@@ -206,18 +192,6 @@ main i{
     margin-bottom: 2rem;
     
 }
-.terzaSection .secondCol{
-    
-   
-}
-.terzaSection .firstCol{
-    
-    /* debug */
-    background-color: green;
-    height: 100%;
-    border: 1px solid white;
-}
-
 .terzaSection img{
     width: 100%;
 }
@@ -241,24 +215,12 @@ main i{
     width: 50%;
 } 
 
-
-/* .colInteraMeta .contImmagine.due{
-    height: 10rem;
-} 
-
-.contImmagine.due img{
-    height: 100%;
-} */
-
 .colInteraMeta .button{
     background-color: #9792E4;
 }
 /* inizio quinta sezione */
 
-.quintasezione{
-    /* debug */
-    width: 100%;
-}
+
 
 .quintasezione .virgolette{
     position: relative;
@@ -270,6 +232,7 @@ main i{
     height: 200px;
     margin: auto;
 }
+
 .virgolette i{
     
     font-size: 4rem;
@@ -443,9 +406,7 @@ footer{
     .metaColonna.immagine{
         align-self: flex-end;
     }
-    /* .sectionViola{
-        display: flex;
-    } */
+    
     .meta .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
