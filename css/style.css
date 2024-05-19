@@ -117,10 +117,11 @@ section{
     width: 100%;
 }
 
-main img{
-    max-width: 100%;
+.firstSection img{
+    max-width: 70%;
     margin: auto;
 }
+
 .secondCol, .secondRowCol{
     text-align: center;
 }
@@ -217,12 +218,37 @@ main i{
     border: 1px solid white;
 }
 
+.terzaSection img{
+    width: 100%;
+}
 
 /* quarta section */
 .colInteraMeta{
     padding: 2rem;
 
 }
+
+.colInteraMeta .contImmagine.uno{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 4rem;
+} 
+
+.contImmagine.uno img{
+    width: 100%;
+} 
+.contImmagine.due img{
+    width: 50%;
+} 
+
+
+/* .colInteraMeta .contImmagine.due{
+    height: 10rem;
+} 
+
+.contImmagine.due img{
+    height: 100%;
+} */
 
 .colInteraMeta .button{
     background-color: #9792E4;
@@ -282,11 +308,10 @@ main i{
 
 footer{
     background-color: black;
+    padding-bottom: 2rem;
 }
 
 .containePlittle{
-    width: 50%;
-    margin: auto;
     padding: var(--distanceTextSection);
 }
 
@@ -333,9 +358,9 @@ footer{
         margin-right: 2rem;
         margin-left: 0;
     }
-/* terza section */
+
     .quartaSection .colInteraMeta{
-        width: calc(50% - 0.5rem);
+        width: calc(50% - 1rem);
     }
     
     .contFeedBack{
@@ -375,6 +400,11 @@ footer{
     .contenutiQuartaSezione.piccolo{
         width: 25%;
     }
+
+    .containePlittle{
+        width: 70%;
+        margin: auto;
+    }
     footer .colInteraMeta{
         margin: var(--marginAuto);
     }
@@ -402,6 +432,10 @@ footer{
     .firstCol{
         display: flex;
     }
+
+    .contImmagine.due img{
+        width: 100%;
+    } 
     .colInteraMeta .backWhite{
         padding: 0;
         margin: 0;
@@ -415,12 +449,15 @@ footer{
     .meta .colInteraMeta{
         width: calc(50% - 0.5rem);
     }
+
+    .containePlittle{
+        width: 50%;
+    }
     .quartaSection .colInteraMeta{
         width: calc(100% / 3 - 0.7rem);
     }
-    .containerFinePagina{
+    .contImmagine.due img{
         width: 50%;
-        
     }
 }
 

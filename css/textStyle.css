@@ -53,11 +53,16 @@ h4{
 h2{
     padding: var(--distanceTextSection);
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
+
 
 .containerFinePagina h2{
     color: orange;
+    font-size: 3.5rem;
+}
+.containerFinePagina h3{
+    font-size: 2rem;
 }
 
 .terzaSection h2{
